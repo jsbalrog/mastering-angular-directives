@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Document</title>
+	<script src="lib/vendor/jquery.js" type="text/javascript"></script>
+	<script src="lib/vendor/angular.js" type="text/javascript"></script>
+	<script src="lib/main.js" type="text/javascript"></script>
+</head>
+<body data-ng-app="myApp">
+
+	<div ng-controller="StopwatchCtrl">
+		<div stopwatch-directive options="stopwatchOptions">
+		 {{stopwatchOptions.elapsedTime}}
+		  <button ng-click="startTimer()">Start</button>
+		  <button ng-click="stopTimer()">Stop</button>
+		  <button ng-click="resetTimer()">Reset</button>
+		</div>
+	</div>
+
+</body>
+</html>
